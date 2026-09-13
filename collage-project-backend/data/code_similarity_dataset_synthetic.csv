@@ -1,0 +1,5171 @@
+func1,func2,language_a,language_b,ast_similarity,winnowing_similarity,token_similarity,line_ratio,token_ratio,matched_fingerprints,fingerprint_containment,ast_node_similarity,ast_depth_similarity,operator_similarity,tfidf_similarity,label,group_id
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",cpp,c,0.9904761904761905,1.0,1.0,1.0,1.0,10,1.0,0.9863013698630136,0.8888888888888888,1.0,1.0,1,synthetic_average
+"
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+","
+function power(base, exponent) {
+    let result = 1;
+
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",cpp,javascript,0.5079365079365079,0.0,0.5333333333333333,0.5714285714285714,0.5384615384615384,0,0.0,0.6153846153846154,0.8571428571428571,0.16666666666666666,0.14074894279882838,0,synthetic_unrelated_50
+"
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+","
+string reverseString(string text) {
+    string result = """";
+
+    for (int i = text.length() - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+",java,cpp,0.7758620689655172,0.6363636363636364,0.8785046728971962,0.7777777777777778,0.8448275862068966,7,1.0,0.8536585365853658,0.8181818181818182,1.0,0.8864984836093838,1,synthetic_reverse_string
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+bool isPrime(int number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (int divisor = 2; divisor < number; divisor++) {
+        if (number % divisor == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",java,cpp,0.3673469387755102,0.0,0.4782608695652174,0.8181818181818182,0.7358490566037735,0,0.0,0.8,1.0,0.14285714285714285,0.25887448036322835,0,synthetic_unrelated_103
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,0.9999999999999998,1,synthetic_search_element
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+",java,cpp,0.5416666666666666,0.2727272727272727,0.7578947368421053,0.8,0.8627450980392157,3,0.42857142857142855,0.9166666666666666,1.0,0.25,0.4613820061315618,1,synthetic_search_element
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+",python,java,0.6301369863013698,0.2,0.5074626865671642,0.5,0.5227272727272727,2,0.4,0.5,0.8,1.0,0.5381385939035185,1,synthetic_search_element
+"
+function sumList(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
+","
+def calculate_area(length, width):
+    area = length * width
+    return area
+",javascript,python,0.6086956521739131,0.0,0.5,0.42857142857142855,0.5172413793103449,0,0.0,0.5641025641025641,0.7142857142857143,0.3333333333333333,0.047806242470804464,0,synthetic_unrelated_34
+"
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+","
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+",java,javascript,0.45614035087719296,0.14285714285714285,0.6808510638297872,0.6666666666666666,0.6785714285714286,1,0.3333333333333333,0.5869565217391305,0.75,1.0,0.4570268470340219,1,synthetic_addition
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+public class Geometry {
+    public static int calculateArea(int length, int width) {
+        int area = length * width;
+        return area;
+    }
+}
+",c,java,0.4044943820224719,0.14285714285714285,0.5063291139240507,0.8571428571428571,0.5490196078431373,2,0.3333333333333333,0.6388888888888888,1.0,0.14285714285714285,0.22148572451997184,0,synthetic_unrelated_107
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+int power(int base, int exponent) {
+    int result = 1;
+
+    for (int i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",java,cpp,0.4948453608247423,0.06666666666666667,0.6666666666666666,0.6363636363636364,0.8367346938775511,1,0.125,0.75,0.6363636363636364,0.3333333333333333,0.26671403012046135,0,synthetic_unrelated_28
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+def is_prime(number):
+    if number < 2:
+        return False
+
+    for divisor in range(2, number):
+        if number % divisor == 0:
+            return False
+
+    return True
+",c,python,0.5526315789473685,0.08333333333333333,0.3076923076923077,0.8571428571428571,0.8571428571428571,1,0.2,0.8653846153846154,1.0,0.0,0.09771646156113557,0,synthetic_unrelated_65
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+function countWords(text) {
+    let words = text.split("" "");
+    return words.length;
+}
+",python,javascript,0.6086956521739131,0.0,0.5789473684210527,0.75,0.6521739130434783,0,0.0,0.6111111111111112,0.625,0.5,0.06759317166168625,0,synthetic_unrelated_105
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+",python,java,0.45652173913043476,0.06666666666666667,0.375,0.5555555555555556,0.3793103448275862,1,0.2,0.4024390243902439,0.6363636363636364,0.2857142857142857,0.3589141479572106,1,synthetic_reverse_string
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+public class MathUtil {
+    public static int power(int base, int exponent) {
+        int result = 1;
+
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+
+        return result;
+    }
+}
+",javascript,java,0.4888888888888889,0.0,0.5925925925925926,0.7777777777777778,0.6875,0,0.0,0.625,0.7777777777777778,0.14285714285714285,0.0531958137369482,0,synthetic_unrelated_68
+"
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+",cpp,cpp,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,0.9999999999999998,1,synthetic_search_element
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+def is_even(number):
+    return number % 2 == 0
+",python,python,0.3111111111111111,0.0,0.4,0.3333333333333333,0.48148148148148145,0,0.0,0.475,0.75,0.0,0.2620436080852432,0,synthetic_unrelated_51
+"
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+function isEven(number) {
+    return number % 2 === 0;
+}
+",cpp,javascript,0.24242424242424243,0.0,0.208955223880597,0.375,0.3137254901960784,0,0.0,0.2916666666666667,0.6,0.0,0.06383603976437222,0,synthetic_unrelated_52
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",javascript,c,0.6046511627906976,0.06666666666666667,0.6428571428571429,1.0,0.6470588235294118,1,0.16666666666666666,0.625,0.875,0.5,0.32206028041518847,1,synthetic_average
+"
+function findMax(numbers) {
+    let maximum = numbers[0];
+
+    for (let number of numbers) {
+        if (number > maximum) {
+            maximum = number;
+        }
+    }
+
+    return maximum;
+}
+","
+int calculateArea(int length, int width) {
+    int area = length * width;
+    return area;
+}
+",javascript,cpp,0.47619047619047616,0.0,0.43333333333333335,0.4444444444444444,0.5384615384615384,0,0.0,0.5818181818181818,0.6666666666666666,0.25,0.03955699876154667,0,synthetic_unrelated_95
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+",python,javascript,0.8947368421052632,0.25,0.8235294117647058,0.75,0.7894736842105263,1,0.5,0.8148148148148148,0.8333333333333334,1.0,0.8448951934138225,1,synthetic_addition
+"
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",javascript,cpp,0.8571428571428571,0.8,0.9152542372881356,1.0,0.9666666666666667,4,1.0,0.9333333333333333,1.0,1.0,0.8844580014865584,1,synthetic_factorial
+"
+def factorial(n):
+    if n <= 1:
+        return 1
+
+    return n * factorial(n - 1)
+","
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",python,javascript,0.8813559322033898,1.0,0.8076923076923077,0.6666666666666666,0.7931034482758621,4,1.0,0.8333333333333334,1.0,1.0,0.9493184006363803,1,synthetic_factorial
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+function findMax(numbers) {
+    let maximum = numbers[0];
+
+    for (let number of numbers) {
+        if (number > maximum) {
+            maximum = number;
+        }
+    }
+
+    return maximum;
+}
+",java,javascript,0.6086956521739131,0.15384615384615385,0.7727272727272727,0.8181818181818182,0.7959183673469388,2,0.2857142857142857,0.7236842105263158,0.8181818181818182,1.0,0.6225658776074778,1,synthetic_maximum
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+public class TextUtil {
+    public static int countWords(String text) {
+        String[] words = text.split("" "");
+        return words.length;
+    }
+}
+",java,java,0.5684210526315789,0.09090909090909091,0.4634146341463415,0.5454545454545454,0.673469387755102,1,0.25,0.6973684210526315,0.9090909090909091,0.3333333333333333,0.19813981907969647,0,synthetic_unrelated_33
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",java,c,0.5111111111111111,0.2727272727272727,0.7294117647058823,0.7777777777777778,0.8478260869565217,3,0.5,0.9375,0.8888888888888888,0.4,0.5630876271828941,1,synthetic_sum_list
+"
+public class Calculator {
+    public static int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+
+        return n * factorial(n - 1);
+    }
+}
+","
+public class Calculator {
+    public static int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+
+        return n * factorial(n - 1);
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_factorial
+"
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",javascript,c,0.6818181818181818,0.0,0.7191011235955056,1.0,0.6792452830188679,0,0.0,0.6666666666666666,1.0,0.5,0.37731106687176924,1,synthetic_count_positive
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+def calculate_area(length, width):
+    area = length * width
+    return area
+",javascript,python,0.5531914893617021,0.0,0.4489795918367347,0.375,0.4411764705882353,0,0.0,0.5,0.625,0.0,0.05193571764696747,0,synthetic_unrelated_11
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+",python,cpp,0.6233766233766234,0.09090909090909091,0.2702702702702703,0.625,0.45098039215686275,1,0.2,0.4583333333333333,0.8,0.25,0.30623815015062666,1,synthetic_search_element
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+def power(base, exponent):
+    result = 1
+
+    for _ in range(exponent):
+        result *= base
+
+    return result
+",cpp,python,0.4691358024691358,0.0,0.3684210526315789,0.7142857142857143,0.49019607843137253,0,0.0,0.4794520547945205,0.6666666666666666,0.14285714285714285,0.04789885196173781,0,synthetic_unrelated_29
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+function containsValue(items, needle) {
+    for (let item of items) {
+        if (item === needle) {
+            return true;
+        }
+    }
+
+    return false;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,0.31847710016053055,1,synthetic_search_element
+"
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+","
+bool isEven(int number) {
+    return number % 2 == 0;
+}
+",c,cpp,0.3333333333333333,0.0,0.325,0.42857142857142855,0.25,0,0.0,0.26373626373626374,0.6,0.0,0.06292132264320814,0,synthetic_unrelated_10
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+def is_even(number):
+    return number % 2 == 0
+",java,python,0.17142857142857143,0.0,0.1935483870967742,0.18181818181818182,0.2653061224489796,0,0.0,0.25,0.5454545454545454,0.0,0.1820582653812468,0,synthetic_unrelated_86
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+def sum_two(x, y):
+    total = x + y
+    return total
+",python,python,1.0,1.0,1.0,1.0,1.0,2,1.0,1.0,1.0,1.0,0.13477398542330463,1,synthetic_addition
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+function isPrime(number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (let divisor = 2; divisor < number; divisor++) {
+        if (number % divisor === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",python,javascript,0.41975308641975306,0.0,0.38461538461538464,0.45454545454545453,0.4716981132075472,0,0.0,0.5,0.7777777777777778,0.125,0.18351382181825568,0,synthetic_unrelated_46
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+def power(base, exponent):
+    result = 1
+
+    for _ in range(exponent):
+        result *= base
+
+    return result
+",javascript,python,0.6774193548387096,0.0,0.5862068965517241,0.7142857142857143,0.7575757575757576,0,0.0,0.7777777777777778,0.8571428571428571,0.25,0.051171029771728015,0,synthetic_unrelated_89
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",java,cpp,0.5391304347826087,0.2,0.7592592592592593,0.8181818181818182,0.8305084745762712,3,0.375,0.8735632183908046,1.0,0.5,0.5750174416188348,1,synthetic_maximum
+"
+def factorial(n):
+    if n <= 1:
+        return 1
+
+    return n * factorial(n - 1)
+","
+def fact(num):
+    if num <= 1:
+        return 1
+
+    return num * fact(num - 1)
+",python,python,1.0,1.0,1.0,1.0,1.0,4,1.0,1.0,1.0,1.0,0.31300731420040684,1,synthetic_factorial
+"
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+","
+function countWords(text) {
+    let words = text.split("" "");
+    return words.length;
+}
+",c,javascript,0.3010752688172043,0.0,0.2988505747126437,0.5714285714285714,0.359375,0,0.0,0.3956043956043956,0.8,0.125,0.2316612728898441,0,synthetic_unrelated_3
+"
+string reverseString(string text) {
+    string result = """";
+
+    for (int i = text.length() - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+string reverseString(string text) {
+    string result = """";
+
+    for (int i = text.length() - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+",cpp,cpp,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_reverse_string
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+function isEven(number) {
+    return number % 2 === 0;
+}
+",javascript,javascript,0.44,0.0,0.4489795918367347,0.42857142857142855,0.48484848484848486,0,0.0,0.4666666666666667,0.8571428571428571,0.0,0.22616841722308534,0,synthetic_unrelated_97
+"
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+function calculateArea(length, width) {
+    let area = length * width;
+    return area;
+}
+",cpp,javascript,0.42857142857142855,0.0,0.4,0.5,0.37254901960784315,0,0.0,0.375,0.6,0.2,0.04897258451607644,0,synthetic_unrelated_72
+"
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",java,cpp,0.6129032258064516,0.6,0.8571428571428571,0.6666666666666666,0.75,3,1.0,0.6956521739130435,0.75,1.0,0.8356275202289967,1,synthetic_addition
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+int searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+",java,c,0.5263157894736842,0.16666666666666666,0.7157894736842105,0.8,0.8627450980392157,2,0.2857142857142857,0.9295774647887324,0.9,0.25,0.4353205931220556,1,synthetic_search_element
+"
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+function tallyPositives(values) {
+    let tally = 0;
+
+    for (let value of values) {
+        if (value > 0) {
+            tally++;
+        }
+    }
+
+    return tally;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.3103422782596721,1,synthetic_count_positive
+"
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",cpp,c,0.9719626168224299,1.0,1.0,1.0,1.0,9,1.0,0.9868421052631579,0.9,1.0,1.0,1,synthetic_count_positive
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+public class NumberUtil {
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+}
+",python,java,0.34782608695652173,0.0,0.2631578947368421,0.6,0.6521739130434783,0,0.0,0.6285714285714286,0.625,0.0,0.0289652040137203,0,synthetic_unrelated_73
+"
+def factorial(n):
+    if n <= 1:
+        return 1
+
+    return n * factorial(n - 1)
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",python,cpp,0.8709677419354839,0.8,0.7169811320754716,0.6666666666666666,0.7666666666666667,4,1.0,0.7777777777777778,1.0,1.0,0.8844580014865584,1,synthetic_factorial
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+public class Prime {
+    public static boolean isPrime(int number) {
+        if (number < 2) {
+            return false;
+        }
+
+        for (int divisor = 2; divisor < number; divisor++) {
+            if (number % divisor == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+",java,java,0.5254237288135594,0.10526315789473684,0.5137614678899083,0.8461538461538461,0.8166666666666667,2,0.25,0.8735632183908046,1.0,0.125,0.34187093366604965,0,synthetic_unrelated_40
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+function isPrime(number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (let divisor = 2; divisor < number; divisor++) {
+        if (number % divisor === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",python,javascript,0.46153846153846156,0.0,0.4473684210526316,0.45454545454545453,0.4339622641509434,0,0.0,0.4583333333333333,0.8888888888888888,0.0,0.3377476970109123,0,synthetic_unrelated_62
+"
+def factorial(n):
+    if n <= 1:
+        return 1
+
+    return n * factorial(n - 1)
+","
+def factorial(n):
+    if n <= 1:
+        return 1
+
+    return n * factorial(n - 1)
+",python,python,1.0,1.0,1.0,1.0,1.0,4,1.0,1.0,1.0,1.0,1.0,1,synthetic_factorial
+"
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+","
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+",python,python,1.0,1.0,1.0,1.0,1.0,4,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_sum_list
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+def is_even(number):
+    return number % 2 == 0
+",java,python,0.208955223880597,0.0,0.2033898305084746,0.18181818181818182,0.2826086956521739,0,0.0,0.2676056338028169,0.5454545454545454,0.0,0.1831933249460885,0,synthetic_unrelated_0
+"
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+","
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,11,1.0,1.0,1.0,1.0,0.9999999999999998,1,synthetic_reverse_string
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+",python,javascript,0.5526315789473685,0.0,0.5294117647058824,0.7142857142857143,0.4782608695652174,0,0.0,0.532258064516129,0.875,0.2857142857142857,0.411722946429348,1,synthetic_reverse_string
+"
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+","
+function isPrime(number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (let divisor = 2; divisor < number; divisor++) {
+        if (number % divisor === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",java,javascript,0.3333333333333333,0.0,0.3963963963963964,0.8181818181818182,0.9137931034482759,0,0.0,0.8780487804878049,0.8181818181818182,0.09090909090909091,0.057336953107538224,0,synthetic_unrelated_108
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+int countWords(string text) {
+    int count = 0;
+
+    for (char character : text) {
+        if (character == ' ') {
+            count++;
+        }
+    }
+
+    return count + 1;
+}
+",java,cpp,0.449438202247191,0.0,0.6588235294117647,0.9,0.9318181818181818,0,0.0,0.8939393939393939,0.9,0.25,0.18526796014457325,0,synthetic_unrelated_38
+"
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+","
+function sumList(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
+",python,javascript,0.8461538461538461,0.0,0.6938775510204082,0.7142857142857143,0.6896551724137931,0,0.0,0.717948717948718,0.8571428571428571,1.0,0.6955224429816514,1,synthetic_sum_list
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+",python,javascript,0.8125,0.2222222222222222,0.6551724137931034,0.7142857142857143,0.7575757575757576,2,0.4,0.8,1.0,1.0,0.7060777744337088,1,synthetic_average
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",javascript,cpp,0.5977011494252874,0.06666666666666667,0.6428571428571429,1.0,0.6470588235294118,1,0.16666666666666666,0.6164383561643836,0.7777777777777778,0.5,0.32206028041518847,1,synthetic_average
+"
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+function isPrime(number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (let divisor = 2; divisor < number; divisor++) {
+        if (number % divisor === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",c,javascript,0.6153846153846154,0.05263157894736842,0.660377358490566,0.8181818181818182,1.0,1,0.1111111111111111,0.96,1.0,0.3333333333333333,0.12006750254521684,0,synthetic_unrelated_87
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+int countWords(string text) {
+    int count = 0;
+
+    for (char character : text) {
+        if (character == ' ') {
+            count++;
+        }
+    }
+
+    return count + 1;
+}
+",c,cpp,0.6105263157894737,0.0,0.5869565217391305,0.7777777777777778,0.803921568627451,0,0.0,0.8194444444444444,0.8888888888888888,0.25,0.18396197771781364,0,synthetic_unrelated_55
+"
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+","
+public class MathHelper {
+    public static int sumTwo(int x, int y) {
+        int total = x + y;
+        return total;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,0.47479187154128405,1,synthetic_addition
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,8,1.0,1.0,1.0,1.0,1.0,1,synthetic_average
+"
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+string reverseString(string text) {
+    string result = """";
+
+    for (int i = text.length() - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+",javascript,cpp,0.82,0.4,0.8842105263157894,1.0,0.9387755102040817,4,0.5714285714285714,0.8857142857142857,0.8888888888888888,1.0,0.7665212655358185,1,synthetic_reverse_string
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+bool isPrime(int number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (int divisor = 2; divisor < number; divisor++) {
+        if (number % divisor == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",c,cpp,0.6037735849056604,0.10526315789473684,0.6346153846153846,0.6363636363636364,0.9622641509433962,2,0.2,0.96,0.8888888888888888,0.3333333333333333,0.16192296775338177,0,synthetic_unrelated_53
+"
+function findMax(numbers) {
+    let maximum = numbers[0];
+
+    for (let number of numbers) {
+        if (number > maximum) {
+            maximum = number;
+        }
+    }
+
+    return maximum;
+}
+","
+function findMax(numbers) {
+    let maximum = numbers[0];
+
+    for (let number of numbers) {
+        if (number > maximum) {
+            maximum = number;
+        }
+    }
+
+    return maximum;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,1.0,1,synthetic_maximum
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+def power(base, exponent):
+    result = 1
+
+    for _ in range(exponent):
+        result *= base
+
+    return result
+",java,python,0.3902439024390244,0.0,0.3783783783783784,0.45454545454545453,0.5102040816326531,0,0.0,0.4605263157894737,0.5454545454545454,0.25,0.05009256243840254,0,synthetic_unrelated_37
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+public class TextUtil {
+    public static int countWords(String text) {
+        String[] words = text.split("" "");
+        return words.length;
+    }
+}
+",python,java,0.5084745762711864,0.2,0.4166666666666667,0.5,0.45454545454545453,1,0.5,0.41509433962264153,0.5,0.5,0.051634725346144536,0,synthetic_unrelated_67
+"
+def count_positive(numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return count
+","
+bool isPrime(int number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (int divisor = 2; divisor < number; divisor++) {
+        if (number % divisor == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",python,cpp,0.49411764705882355,0.0,0.3333333333333333,0.5454545454545454,0.4716981132075472,0,0.0,0.48,0.8888888888888888,0.125,0.23344795306804264,0,synthetic_unrelated_90
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+string reverseString(string text) {
+    string result = """";
+
+    for (int i = text.length() - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+",python,cpp,0.5121951219512195,0.09090909090909091,0.4225352112676056,0.7142857142857143,0.4489795918367347,1,0.2,0.4714285714285714,0.7777777777777778,0.2857142857142857,0.38878012622307595,1,synthetic_reverse_string
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+public class MathUtil {
+    public static int power(int base, int exponent) {
+        int result = 1;
+
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+
+        return result;
+    }
+}
+",java,java,0.6470588235294118,0.21428571428571427,0.6521739130434783,0.9,0.9166666666666666,3,0.42857142857142855,0.9166666666666666,0.9,0.0,0.30720439679851286,0,synthetic_unrelated_113
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+",python,javascript,0.8214285714285714,0.0,0.6666666666666666,0.625,0.6764705882352942,0,0.0,0.75,1.0,0.0,0.6927101073760898,1,synthetic_search_element
+"
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+","
+bool isPrime(int number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (int divisor = 2; divisor < number; divisor++) {
+        if (number % divisor == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",c,cpp,0.64,0.11764705882352941,0.6666666666666666,0.6363636363636364,0.8679245283018868,2,0.25,0.8533333333333334,0.8888888888888888,0.375,0.18781492111589412,0,synthetic_unrelated_118
+"
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+","
+public class TextUtil {
+    public static int countWords(String text) {
+        String[] words = text.split("" "");
+        return words.length;
+    }
+}
+",c,java,0.3018867924528302,0.07692307692307693,0.35051546391752575,0.8571428571428571,0.515625,1,0.25,0.5824175824175825,1.0,0.125,0.20046544217139464,0,synthetic_unrelated_26
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+",javascript,cpp,0.6075949367088608,0.0,0.7058823529411765,1.0,0.6666666666666666,0,0.0,0.6111111111111112,0.8,0.0,0.29687436689220004,1,synthetic_search_element
+"
+def count_positive(numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return count
+","
+def count_positive(numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return count
+",python,python,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,1.0,1,synthetic_count_positive
+"
+def count_positive(numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return count
+","
+def tally_positives(values):
+    tally = 0
+
+    for value in values:
+        if value > 0:
+            tally += 1
+
+    return tally
+",python,python,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.2677322185885367,1,synthetic_count_positive
+"
+string reverseString(string text) {
+    string result = """";
+
+    for (int i = text.length() - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+",cpp,c,0.559322033898305,0.0625,0.5132743362831859,1.0,0.765625,1,0.14285714285714285,0.7692307692307693,0.9,0.2727272727272727,0.6822719992958376,1,synthetic_reverse_string
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+public class NumberUtil {
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+}
+",python,java,0.29508196721311475,0.0,0.2,0.8333333333333334,0.8518518518518519,0,0.0,0.875,1.0,0.0,0.1587766180773131,0,synthetic_unrelated_92
+"
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+int countWords(string text) {
+    int count = 0;
+
+    for (char character : text) {
+        if (character == ' ') {
+            count++;
+        }
+    }
+
+    return count + 1;
+}
+",c,cpp,0.625,0.0,0.723404255319149,1.0,0.7735849056603774,0,0.0,0.7866666666666666,1.0,0.25,0.4098094177098702,0,synthetic_unrelated_15
+"
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+","
+public class NumberUtil {
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+}
+",cpp,java,0.26666666666666666,0.0,0.37681159420289856,0.7142857142857143,0.5,0,0.0,0.5384615384615384,0.8888888888888888,0.0,0.127952462406951,0,synthetic_unrelated_2
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+def get_mean(values):
+    running_total = 0
+
+    for value in values:
+        running_total += value
+
+    return running_total / len(values)
+",python,python,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,0.16534197155354557,1,synthetic_average
+"
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+","
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,3,1.0,1.0,1.0,1.0,0.9999999999999998,1,synthetic_addition
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.9999999999999998,1,synthetic_count_positive
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",java,cpp,0.5523809523809524,0.15384615384615385,0.7676767676767676,0.8181818181818182,0.8679245283018868,2,0.3333333333333333,0.9342105263157895,0.9090909090909091,0.5,0.6064616981323665,1,synthetic_count_positive
+"
+def count_positive(numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return count
+","
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",python,javascript,0.7575757575757576,0.09090909090909091,0.6229508196721312,0.6666666666666666,0.6944444444444444,1,0.16666666666666666,0.72,0.8888888888888888,0.5,0.6713753552667181,1,synthetic_count_positive
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+def is_prime(number):
+    if number < 2:
+        return False
+
+    for divisor in range(2, number):
+        if number % divisor == 0:
+            return False
+
+    return True
+",java,python,0.20833333333333334,0.0,0.19753086419753085,0.7777777777777778,0.7608695652173914,0,0.0,0.7323943661971831,0.8888888888888888,0.0,0.15717485236525885,0,synthetic_unrelated_84
+"
+function sumList(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
+","
+function sumList(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,4,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_sum_list
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+def is_prime(number):
+    if number < 2:
+        return False
+
+    for divisor in range(2, number):
+        if number % divisor == 0:
+            return False
+
+    return True
+",javascript,python,0.44155844155844154,0.0,0.29411764705882354,1.0,0.9428571428571428,0,0.0,0.8653846153846154,0.875,0.0,0.18796631783114498,0,synthetic_unrelated_18
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+public class NumberUtil {
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+}
+",cpp,java,0.39344262295081966,0.0,0.49056603773584906,0.8333333333333334,0.7666666666666667,0,0.0,0.7777777777777778,1.0,0.0,0.0783861221056349,0,synthetic_unrelated_111
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+",java,javascript,0.5066666666666667,0.0,0.7435897435897436,0.8,0.7727272727272727,0,0.0,0.6666666666666666,0.8,0.0,0.5194229419576428,1,synthetic_search_element
+"
+public class Calculator {
+    public static int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+
+        return n * factorial(n - 1);
+    }
+}
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",java,c,0.7894736842105263,0.7142857142857143,0.8955223880597015,0.75,0.8108108108108109,5,1.0,0.7894736842105263,0.8,1.0,0.8647556314818156,1,synthetic_factorial
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+def power(base, exponent):
+    result = 1
+
+    for _ in range(exponent):
+        result *= base
+
+    return result
+",javascript,python,0.5614035087719298,0.0,0.5084745762711864,0.625,0.7352941176470589,0,0.0,0.7954545454545454,0.75,0.0,0.06273325462367972,0,synthetic_unrelated_56
+"
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+","
+function countWords(text) {
+    let words = text.split("" "");
+    return words.length;
+}
+",python,javascript,0.5384615384615384,0.0,0.5116279069767442,0.8,0.8695652173913043,0,0.0,0.7777777777777778,0.75,0.5,0.05519676856768577,0,synthetic_unrelated_36
+"
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",python,cpp,0.6197183098591549,0.0,0.45454545454545453,0.7142857142857143,0.43478260869565216,0,0.0,0.4307692307692308,0.6666666666666666,0.4,0.3252314708200031,1,synthetic_sum_list
+"
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",cpp,c,0.989247311827957,1.0,1.0,1.0,1.0,8,1.0,0.9846153846153847,0.8888888888888888,1.0,1.0,1,synthetic_sum_list
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+",python,java,0.6181818181818182,0.16666666666666666,0.5581395348837209,0.5,0.5357142857142857,1,0.5,0.4782608695652174,0.625,1.0,0.4814840790797866,1,synthetic_addition
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_average
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+public class CountHelper {
+    public static int tallyPositives(int[] values) {
+        int tally = 0;
+
+        for (int value : values) {
+            if (value > 0) {
+                tally++;
+            }
+        }
+
+        return tally;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.46022431380865186,1,synthetic_count_positive
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+function power(base, exponent) {
+    let result = 1;
+
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",c,javascript,0.7111111111111111,0.07142857142857142,0.7333333333333333,1.0,0.7647058823529411,1,0.2,0.7222222222222222,0.875,0.5714285714285714,0.24788939468616955,0,synthetic_unrelated_20
+"
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+function countWords(text) {
+    let words = text.split("" "");
+    return words.length;
+}
+",javascript,javascript,0.5396825396825397,0.0,0.4745762711864407,0.4444444444444444,0.6388888888888888,0,0.0,0.72,0.8888888888888888,0.3333333333333333,0.12690552371179384,0,synthetic_unrelated_57
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",java,c,0.5142857142857142,0.2857142857142857,0.7422680412371134,0.7777777777777778,0.9019607843137255,4,0.5,0.9861111111111112,0.8888888888888888,0.5,0.5109218639375261,1,synthetic_average
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+int calculateArea(int length, int width) {
+    int area = length * width;
+    return area;
+}
+",javascript,cpp,0.48148148148148145,0.0,0.43636363636363634,0.5,0.6176470588235294,0,0.0,0.7272727272727273,0.75,0.0,0.03759169870528051,0,synthetic_unrelated_4
+"
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+",javascript,c,0.48214285714285715,0.0,0.43636363636363634,1.0,0.71875,0,0.0,0.6813186813186813,0.8,0.2727272727272727,0.6923835903154707,1,synthetic_reverse_string
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+def count_words(text):
+    words = text.split()
+    return len(words)
+",java,python,0.23529411764705882,0.0,0.16129032258064516,0.3,0.4090909090909091,0,0.0,0.4393939393939394,0.6,0.0,0.04527674232420866,0,synthetic_unrelated_85
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+def is_even(number):
+    return number % 2 == 0
+",python,python,0.4117647058823529,0.0,0.5,0.4,0.5652173913043478,0,0.0,0.5757575757575758,0.75,0.5,0.3377288647316775,0,synthetic_unrelated_35
+"
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",javascript,c,0.8888888888888888,0.8,0.9152542372881356,1.0,0.9666666666666667,4,1.0,0.9333333333333333,1.0,1.0,0.8844580014865584,1,synthetic_factorial
+"
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",javascript,cpp,0.7555555555555555,0.2,0.8,1.0,0.9047619047619048,1,0.3333333333333333,0.84375,1.0,1.0,0.5191747726325111,1,synthetic_addition
+"
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+function fact(num) {
+    if (num <= 1) {
+        return 1;
+    }
+
+    return num * fact(num - 1);
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,4,1.0,1.0,1.0,1.0,0.31300731420040684,1,synthetic_factorial
+"
+public class Calculator {
+    public static int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+
+        return n * factorial(n - 1);
+    }
+}
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",java,cpp,0.7631578947368421,0.7142857142857143,0.8955223880597015,0.75,0.8108108108108109,5,1.0,0.7894736842105263,0.8,1.0,0.8647556314818156,1,synthetic_factorial
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+function findMax(numbers) {
+    let maximum = numbers[0];
+
+    for (let number of numbers) {
+        if (number > maximum) {
+            maximum = number;
+        }
+    }
+
+    return maximum;
+}
+",python,javascript,0.8169014084507042,0.2,0.696969696969697,0.6666666666666666,0.6923076923076923,2,0.4,0.7272727272727273,0.8888888888888888,1.0,0.8154925694770094,1,synthetic_maximum
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+function calculateArea(length, width) {
+    let area = length * width;
+    return area;
+}
+",java,javascript,0.36363636363636365,0.0,0.38095238095238093,0.4,0.4318181818181818,0,0.0,0.4090909090909091,0.6,0.0,0.039769119763173974,0,synthetic_unrelated_116
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+",python,python,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,1.0,1,synthetic_search_element
+"
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+","
+def calculate_area(length, width):
+    area = length * width
+    return area
+",java,python,0.43636363636363634,0.0,0.5116279069767442,0.5,0.5357142857142857,0,0.0,0.4782608695652174,0.625,0.3333333333333333,0.04103905043423468,0,synthetic_unrelated_14
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",c,c,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,1.0,1,synthetic_factorial
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",java,c,0.5769230769230769,0.15384615384615385,0.7676767676767676,0.8181818181818182,0.8679245283018868,2,0.3333333333333333,0.9466666666666667,0.8181818181818182,0.5,0.6064616981323665,1,synthetic_count_positive
+"
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",cpp,cpp,1.0,1.0,1.0,1.0,1.0,8,1.0,1.0,1.0,1.0,1.0,1,synthetic_sum_list
+"
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+int power(int base, int exponent) {
+    int result = 1;
+
+    for (int i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",cpp,cpp,0.7096774193548387,0.25,0.7391304347826086,0.875,0.803921568627451,3,0.42857142857142855,0.7916666666666666,0.7,0.5,0.5032988919272611,0,synthetic_unrelated_39
+"
+public class Search {
+    public static boolean searchElement(int[] numbers, int target) {
+        for (int number : numbers) {
+            if (number == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+","
+public class SearchHelper {
+    public static boolean containsValue(int[] items, int needle) {
+        for (int item : items) {
+            if (item == needle) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,0.474791871541284,1,synthetic_search_element
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+def get_largest(values):
+    largest = values[0]
+
+    for value in values:
+        if value > largest:
+            largest = value
+
+    return largest
+",python,python,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,0.13726557449944596,1,synthetic_maximum
+"
+int searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+","
+int searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+",c,c,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,1.0,1,synthetic_search_element
+"
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+","
+int power(int base, int exponent) {
+    int result = 1;
+
+    for (int i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",c,cpp,0.7222222222222222,0.2857142857142857,0.7238095238095238,1.0,0.640625,4,0.5,0.6263736263736264,0.7,0.4444444444444444,0.48452316893408404,0,synthetic_unrelated_42
+"
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+","
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+",python,java,0.6176470588235294,0.0,0.5084745762711864,0.5555555555555556,0.5128205128205128,0,0.0,0.4666666666666667,0.6666666666666666,1.0,0.49970496354446003,1,synthetic_sum_list
+"
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+","
+def is_even(number):
+    return number % 2 == 0
+",c,python,0.3902439024390244,0.0,0.29411764705882354,0.5,0.6190476190476191,0,0.0,0.59375,1.0,0.0,0.027825168741424402,0,synthetic_unrelated_66
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+def calculate_area(length, width):
+    area = length * width
+    return area
+",python,python,0.7142857142857143,0.0,0.6486486486486487,0.6,0.6818181818181818,0,0.0,0.6666666666666666,0.7142857142857143,0.25,0.09226747294596781,0,synthetic_unrelated_112
+"
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+","
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+",c,c,1.0,1.0,1.0,1.0,1.0,10,1.0,1.0,1.0,1.0,1.0,1,synthetic_reverse_string
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+def is_prime(number):
+    if number < 2:
+        return False
+
+    for divisor in range(2, number):
+        if number % divisor == 0:
+            return False
+
+    return True
+",python,python,0.5373134328358209,0.0,0.5806451612903226,0.8571428571428571,0.7714285714285715,0,0.0,0.7692307692307693,1.0,0.0,0.29048156581237905,0,synthetic_unrelated_24
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+",python,java,0.6436781609195402,0.18181818181818182,0.5526315789473685,0.5454545454545454,0.5510204081632653,2,0.4,0.5263157894736842,0.7272727272727273,1.0,0.6465397808430824,1,synthetic_maximum
+"
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+int calculateArea(int length, int width) {
+    int area = length * width;
+    return area;
+}
+",javascript,cpp,0.5,0.0,0.38596491228070173,0.4444444444444444,0.5833333333333334,0,0.0,0.64,0.6666666666666666,0.25,0.03164334796771778,0,synthetic_unrelated_99
+"
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+","
+def count_words(text):
+    words = text.split()
+    return len(words)
+",c,python,0.5957446808510638,0.0,0.46153846153846156,0.75,0.8571428571428571,0,0.0,0.90625,1.0,0.5,0.05040125896780564,0,synthetic_unrelated_21
+"
+def factorial(n):
+    if n <= 1:
+        return 1
+
+    return n * factorial(n - 1)
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",python,c,0.8709677419354839,0.8,0.7169811320754716,0.6666666666666666,0.7666666666666667,4,1.0,0.7777777777777778,1.0,1.0,0.8844580014865584,1,synthetic_factorial
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+public class NumberUtil {
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+}
+",javascript,java,0.2807017543859649,0.0,0.2807017543859649,0.625,0.6764705882352942,0,0.0,0.7954545454545454,1.0,0.0,0.16282950792254106,0,synthetic_unrelated_114
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+function power(base, exponent) {
+    let result = 1;
+
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",javascript,javascript,0.7222222222222222,0.1,0.7777777777777778,1.0,0.8461538461538461,1,0.2,0.8653846153846154,1.0,0.14285714285714285,0.14800534060425208,0,synthetic_unrelated_6
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+def add(a, b):
+    result = a + b
+    return result
+",python,python,1.0,1.0,1.0,1.0,1.0,2,1.0,1.0,1.0,1.0,1.0,1,synthetic_addition
+"
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+","
+function isEven(number) {
+    return number % 2 === 0;
+}
+",cpp,javascript,0.3902439024390244,0.0,0.43243243243243246,0.75,0.7619047619047619,0,0.0,0.65625,1.0,0.0,0.027825168741424402,0,synthetic_unrelated_71
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",java,cpp,0.5054945054945055,0.2727272727272727,0.7294117647058823,0.7777777777777778,0.8478260869565217,3,0.5,0.9230769230769231,1.0,0.4,0.5630876271828941,1,synthetic_sum_list
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+def power(base, exponent):
+    result = 1
+
+    for _ in range(exponent):
+        result *= base
+
+    return result
+",python,python,0.7636363636363637,0.25,0.76,1.0,1.0,2,0.4,0.9722222222222222,0.8571428571428571,0.25,0.09404367715663793,0,synthetic_unrelated_49
+"
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+public class TextUtil {
+    public static int countWords(String text) {
+        String[] words = text.split("" "");
+        return words.length;
+    }
+}
+",cpp,java,0.3368421052631579,0.0,0.32558139534883723,0.6666666666666666,0.6226415094339622,0,0.0,0.6973684210526315,1.0,0.16666666666666666,0.1026491846921856,0,synthetic_unrelated_76
+"
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",python,c,0.6285714285714286,0.0,0.45454545454545453,0.7142857142857143,0.43478260869565216,0,0.0,0.4375,0.75,0.4,0.3252314708200031,1,synthetic_sum_list
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+",python,python,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_maximum
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",python,cpp,0.6024096385542169,0.0,0.4473684210526316,0.7142857142857143,0.49019607843137253,0,0.0,0.4931506849315068,0.7777777777777778,0.5,0.33305387797277575,1,synthetic_average
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+function countWords(text) {
+    let words = text.split("" "");
+    return words.length;
+}
+",java,javascript,0.27848101265822783,0.0,0.3188405797101449,0.36363636363636365,0.5,0,0.0,0.5070422535211268,0.7272727272727273,0.3333333333333333,0.038246614920152744,0,synthetic_unrelated_32
+"
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+function countWords(text) {
+    let words = text.split("" "");
+    return words.length;
+}
+",javascript,javascript,0.5066666666666667,0.0,0.4927536231884058,0.5714285714285714,0.5,0,0.0,0.5806451612903226,1.0,0.16666666666666666,0.3084505519583282,0,synthetic_unrelated_8
+"
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",java,c,0.6129032258064516,0.6,0.8571428571428571,0.6666666666666666,0.75,3,1.0,0.6956521739130435,0.75,1.0,0.8356275202289967,1,synthetic_addition
+"
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+","
+function power(base, exponent) {
+    let result = 1;
+
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",javascript,javascript,0.6551724137931034,0.0,0.6551724137931034,0.5714285714285714,0.48717948717948717,0,0.0,0.5192307692307693,0.8571428571428571,0.16666666666666666,0.27952049196103074,0,synthetic_unrelated_117
+"
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+","
+function countWords(text) {
+    let words = text.split("" "");
+    return words.length;
+}
+",javascript,javascript,0.7083333333333334,0.0,0.7619047619047619,1.0,0.8260869565217391,0,0.0,0.75,0.75,0.5,0.14016277863656654,0,synthetic_unrelated_69
+"
+public class Calculator {
+    public static int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+
+        return n * factorial(n - 1);
+    }
+}
+","
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",java,javascript,0.7671232876712328,0.5714285714285714,0.8181818181818182,0.75,0.7837837837837838,4,1.0,0.7368421052631579,0.8,1.0,0.773360147227866,1,synthetic_factorial
+"
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+","
+public class Prime {
+    public static boolean isPrime(int number) {
+        if (number < 2) {
+            return false;
+        }
+
+        for (int divisor = 2; divisor < number; divisor++) {
+            if (number % divisor == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+",java,java,0.5669291338582677,0.0,0.4915254237288136,0.6923076923076923,0.9666666666666667,0,0.0,0.9425287356321839,1.0,0.09090909090909091,0.12147311633410833,0,synthetic_unrelated_23
+"
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",c,c,1.0,1.0,1.0,1.0,1.0,3,1.0,1.0,1.0,1.0,1.0,1,synthetic_addition
+"
+bool searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+int searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+",cpp,c,0.9292929292929293,0.75,0.9607843137254902,1.0,1.0,6,0.8571428571428571,0.9861111111111112,0.9,1.0,0.9266609215574672,1,synthetic_search_element
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",cpp,c,0.9696969696969697,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,1.0,1,synthetic_factorial
+"
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+","
+def count_words(text):
+    words = text.split()
+    return len(words)
+",java,python,0.3728813559322034,0.0,0.391304347826087,0.5,0.6428571428571429,0,0.0,0.6304347826086957,0.75,0.5,0.04552464221467363,0,synthetic_unrelated_98
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+public class Prime {
+    public static boolean isPrime(int number) {
+        if (number < 2) {
+            return false;
+        }
+
+        for (int divisor = 2; divisor < number; divisor++) {
+            if (number % divisor == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+",python,java,0.3010752688172043,0.0,0.24390243902439024,0.38461538461538464,0.36666666666666664,0,0.0,0.3793103448275862,0.6363636363636364,0.125,0.06444756093218595,0,synthetic_unrelated_48
+"
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",javascript,cpp,0.651685393258427,0.0,0.7191011235955056,1.0,0.6792452830188679,0,0.0,0.6578947368421053,0.9,0.5,0.37731106687176924,1,synthetic_count_positive
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",python,c,0.6097560975609756,0.0,0.4473684210526316,0.7142857142857143,0.49019607843137253,0,0.0,0.5,0.875,0.5,0.33305387797277575,1,synthetic_average
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",java,javascript,0.6046511627906976,0.09090909090909091,0.7560975609756098,0.8181818181818182,0.782608695652174,1,0.16666666666666666,0.704225352112676,0.8181818181818182,1.0,0.517593051954116,1,synthetic_count_positive
+"
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+function countPositive(numbers) {
+    let count = 0;
+
+    for (let number of numbers) {
+        if (number > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_count_positive
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+function calculateArea(length, width) {
+    let area = length * width;
+    return area;
+}
+",javascript,javascript,0.6122448979591837,0.0,0.5660377358490566,0.5,0.5588235294117647,0,0.0,0.6136363636363636,0.75,0.0,0.10613306248808396,0,synthetic_unrelated_100
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+function power(base, exponent) {
+    let result = 1;
+
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",java,javascript,0.43902439024390244,0.0,0.5897435897435898,0.7777777777777778,1.0,0,0.0,0.8666666666666667,0.7777777777777778,0.16666666666666666,0.060665476088380986,0,synthetic_unrelated_60
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+public class MathHelper {
+    public static double getMean(int[] values) {
+        int runningTotal = 0;
+
+        for (int value : values) {
+            runningTotal += value;
+        }
+
+        return (double) runningTotal / values.length;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,8,1.0,1.0,1.0,1.0,0.35418496468931815,1,synthetic_average
+"
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+","
+public class Geometry {
+    public static int calculateArea(int length, int width) {
+        int area = length * width;
+        return area;
+    }
+}
+",cpp,java,0.3673469387755102,0.14285714285714285,0.45977011494252873,0.6666666666666666,0.4745762711864407,2,0.3333333333333333,0.5287356321839081,0.7272727272727273,0.14285714285714285,0.23506679752930662,0,synthetic_unrelated_81
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",java,cpp,0.5094339622641509,0.2857142857142857,0.7422680412371134,0.7777777777777778,0.9019607843137255,4,0.5,0.9726027397260274,1.0,0.5,0.5109218639375261,1,synthetic_average
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",python,c,0.6373626373626373,0.0,0.4883720930232558,0.6666666666666666,0.4576271186440678,0,0.0,0.47619047619047616,0.8,0.5,0.41423286985427,1,synthetic_maximum
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+function isEven(number) {
+    return number % 2 === 0;
+}
+",java,javascript,0.1791044776119403,0.0,0.2903225806451613,0.2727272727272727,0.34782608695652173,0,0.0,0.29577464788732394,0.5454545454545454,0.0,0.1831933249460885,0,synthetic_unrelated_31
+"
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+def count_words(text):
+    words = text.split()
+    return len(words)
+",c,python,0.37333333333333335,0.0,0.11267605633802817,0.3333333333333333,0.33962264150943394,0,0.0,0.38666666666666666,0.6666666666666666,0.16666666666666666,0.047509425220643726,0,synthetic_unrelated_12
+"
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",c,c,1.0,1.0,1.0,1.0,1.0,10,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_maximum
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+def contains_value(items, needle):
+    for item in items:
+        if item == needle:
+            return True
+
+    return False
+",python,python,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,0.29989652306498316,1,synthetic_search_element
+"
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+public class NumberUtil {
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+}
+",cpp,java,0.2682926829268293,0.0,0.34210526315789475,0.5555555555555556,0.4339622641509434,0,0.0,0.4605263157894737,0.8,0.0,0.13636977845015846,0,synthetic_unrelated_9
+"
+def factorial(n):
+    if n <= 1:
+        return 1
+
+    return n * factorial(n - 1)
+","
+public class Calculator {
+    public static int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+
+        return n * factorial(n - 1);
+    }
+}
+",python,java,0.75,0.5714285714285714,0.6333333333333333,0.5,0.6216216216216216,4,1.0,0.6140350877192983,0.8,1.0,0.773360147227866,1,synthetic_factorial
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+public class Geometry {
+    public static int calculateArea(int length, int width) {
+        int area = length * width;
+        return area;
+    }
+}
+",python,java,0.375,0.0,0.35294117647058826,0.8333333333333334,0.8214285714285714,0,0.0,0.717391304347826,1.0,0.0,0.034766947292003164,0,synthetic_unrelated_110
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+def power(base, exponent):
+    result = 1
+
+    for _ in range(exponent):
+        result *= base
+
+    return result
+",java,python,0.4050632911392405,0.0,0.39436619718309857,0.45454545454545453,0.5434782608695652,0,0.0,0.49295774647887325,0.5454545454545454,0.25,0.04272349923506947,0,synthetic_unrelated_54
+"
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+","
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+",java,javascript,0.6727272727272727,0.2857142857142857,0.7692307692307693,0.7777777777777778,0.7931034482758621,4,0.5714285714285714,0.7560975609756098,0.7272727272727273,1.0,0.6902409763522627,1,synthetic_reverse_string
+"
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",cpp,cpp,1.0,1.0,1.0,1.0,1.0,10,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_maximum
+"
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+","
+public class MathUtil {
+    public static int power(int base, int exponent) {
+        int result = 1;
+
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+
+        return result;
+    }
+}
+",cpp,java,0.5811965811965812,0.3333333333333333,0.7476635514018691,1.0,0.8135593220338984,5,0.5,0.8275862068965517,0.8181818181818182,0.5714285714285714,0.4414435186617282,0,synthetic_unrelated_80
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",java,c,0.5714285714285714,0.2,0.7592592592592593,0.8181818181818182,0.8305084745762712,3,0.375,0.9047619047619048,0.9090909090909091,0.5,0.5750174416188348,1,synthetic_maximum
+"
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",c,c,1.0,1.0,1.0,1.0,1.0,8,1.0,1.0,1.0,1.0,1.0,1,synthetic_sum_list
+"
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+","
+def power(base, exponent):
+    result = 1
+
+    for _ in range(exponent):
+        result *= base
+
+    return result
+",java,python,0.3384615384615385,0.0,0.41509433962264153,0.8333333333333334,0.8928571428571429,0,0.0,0.7608695652173914,0.75,0.3333333333333333,0.14526497713722755,0,synthetic_unrelated_61
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+function power(base, exponent) {
+    let result = 1;
+
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",cpp,javascript,0.7032967032967034,0.07142857142857142,0.7333333333333333,1.0,0.7647058823529411,1,0.2,0.7123287671232876,0.7777777777777778,0.5714285714285714,0.24788939468616955,0,synthetic_unrelated_17
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",python,cpp,0.6170212765957447,0.0,0.4883720930232558,0.6666666666666666,0.4576271186440678,0,0.0,0.45977011494252873,0.7272727272727273,0.5,0.41423286985427,1,synthetic_maximum
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+function isEven(number) {
+    return number % 2 === 0;
+}
+",cpp,javascript,0.2898550724637681,0.0,0.26865671641791045,0.42857142857142855,0.3137254901960784,0,0.0,0.2876712328767123,0.6666666666666666,0.0,0.05715041882921276,0,synthetic_unrelated_1
+"
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+def calculate_area(length, width):
+    area = length * width
+    return area
+",javascript,python,0.46153846153846156,0.0,0.36065573770491804,0.42857142857142855,0.32608695652173914,0,0.0,0.3548387096774194,0.625,0.14285714285714285,0.09550759258355462,0,synthetic_unrelated_41
+"
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",cpp,cpp,1.0,1.0,1.0,1.0,1.0,3,1.0,1.0,1.0,1.0,1.0,1,synthetic_addition
+"
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+","
+def add_all(values):
+    accumulator = 0
+
+    for value in values:
+        accumulator += value
+
+    return accumulator
+",python,python,1.0,1.0,1.0,1.0,1.0,4,1.0,1.0,1.0,1.0,0.16448922464705737,1,synthetic_sum_list
+"
+function findMax(numbers) {
+    let maximum = numbers[0];
+
+    for (let number of numbers) {
+        if (number > maximum) {
+            maximum = number;
+        }
+    }
+
+    return maximum;
+}
+","
+function getLargest(values) {
+    let largest = values[0];
+
+    for (let value of values) {
+        if (value > largest) {
+            largest = value;
+        }
+    }
+
+    return largest;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,0.17828145388467145,1,synthetic_maximum
+"
+def count_positive(numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return count
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",python,cpp,0.5882352941176471,0.0,0.4358974358974359,0.6666666666666666,0.4716981132075472,0,0.0,0.47368421052631576,0.8,0.2857142857142857,0.34666590512027484,1,synthetic_count_positive
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+public class MathUtil {
+    public static int power(int base, int exponent) {
+        int result = 1;
+
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+
+        return result;
+    }
+}
+",c,java,0.6296296296296297,0.5384615384615384,0.8080808080808081,0.7777777777777778,0.9411764705882353,7,0.7,1.0,0.8888888888888888,0.5714285714285714,0.425194643921502,0,synthetic_unrelated_101
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+def is_even(number):
+    return number % 2 == 0
+",cpp,python,0.4489795918367347,0.0,0.27906976744186046,0.3333333333333333,0.43333333333333335,0,0.0,0.4222222222222222,0.75,0.0,0.050002854392249614,0,synthetic_unrelated_64
+"
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+","
+int calculateArea(int length, int width) {
+    int area = length * width;
+    return area;
+}
+",c,cpp,0.676056338028169,0.2,0.5970149253731343,0.5714285714285714,0.45652173913043476,2,0.5,0.5,0.75,0.16666666666666666,0.32026935724258876,0,synthetic_unrelated_106
+"
+function findMax(numbers) {
+    let maximum = numbers[0];
+
+    for (let number of numbers) {
+        if (number > maximum) {
+            maximum = number;
+        }
+    }
+
+    return maximum;
+}
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",javascript,c,0.6875,0.0,0.7142857142857143,1.0,0.6610169491525424,0,0.0,0.6547619047619048,0.9,0.5,0.4024101415133581,1,synthetic_maximum
+"
+def factorial(n):
+    if n <= 1:
+        return 1
+
+    return n * factorial(n - 1)
+","
+public class Geometry {
+    public static int calculateArea(int length, int width) {
+        int area = length * width;
+        return area;
+    }
+}
+",python,java,0.36363636363636365,0.0,0.35294117647058826,0.6666666666666666,0.8214285714285714,0,0.0,0.7608695652173914,1.0,0.25,0.04132500468037311,0,synthetic_unrelated_19
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+",python,c,0.3829787234042553,0.0,0.27906976744186046,0.7142857142857143,0.34375,0,0.0,0.3626373626373626,0.7,0.2222222222222222,0.3269240457198921,1,synthetic_reverse_string
+"
+public class Calculator {
+    public static int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+
+        return n * factorial(n - 1);
+    }
+}
+","
+public class MathHelper {
+    public static int fact(int num) {
+        if (num <= 1) {
+            return 1;
+        }
+
+        return num * fact(num - 1);
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,0.39426432684458607,1,synthetic_factorial
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+int power(int base, int exponent) {
+    int result = 1;
+
+    for (int i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",java,cpp,0.5057471264367817,0.16666666666666666,0.7,0.7777777777777778,0.9512195121951219,2,0.3333333333333333,0.95,0.7777777777777778,0.16666666666666666,0.3064972324984664,0,synthetic_unrelated_77
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",python,cpp,0.7906976744186046,0.25,0.6666666666666666,0.75,0.7142857142857143,1,0.5,0.6875,0.8333333333333334,1.0,0.5469577748105761,1,synthetic_addition
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+int countWords(string text) {
+    int count = 0;
+
+    for (char character : text) {
+        if (character == ' ') {
+            count++;
+        }
+    }
+
+    return count + 1;
+}
+",java,cpp,0.5360824742268041,0.0,0.7111111111111111,0.8181818181818182,0.8367346938775511,0,0.0,0.7763157894736842,0.8181818181818182,0.16666666666666666,0.1785934535007164,0,synthetic_unrelated_27
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+int power(int base, int exponent) {
+    int result = 1;
+
+    for (int i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",javascript,cpp,0.5714285714285714,0.0,0.6486486486486487,1.0,0.8048780487804879,0,0.0,0.7894736842105263,1.0,0.14285714285714285,0.056235818075017166,0,synthetic_unrelated_82
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,1.0,1,synthetic_search_element
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.9999999999999999,1,synthetic_sum_list
+"
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+","
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+",java,c,0.46875,0.05,0.4918032786885246,0.7777777777777778,0.90625,1,0.1,0.9010989010989011,0.9090909090909091,0.2727272727272727,0.6167951112620075,1,synthetic_reverse_string
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+def count_words(text):
+    words = text.split()
+    return len(words)
+",python,python,0.7428571428571429,0.0,0.7272727272727273,1.0,0.8333333333333334,0,0.0,0.7586206896551724,0.8333333333333334,0.5,0.10896143976697675,0,synthetic_unrelated_96
+"
+void reverseString(char text[], char result[]) {
+    int length = strlen(text);
+
+    for (int i = 0; i < length; i++) {
+        result[i] = text[length - i - 1];
+    }
+
+    result[length] = '\0';
+}
+","
+function isEven(number) {
+    return number % 2 === 0;
+}
+",c,javascript,0.24691358024691357,0.0,0.2,0.42857142857142855,0.25,0,0.0,0.23076923076923078,0.6,0.0,0.031876748417566714,0,synthetic_unrelated_102
+"
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+function flipText(inputText) {
+    let outputText = """";
+
+    for (let i = inputText.length - 1; i >= 0; i--) {
+        outputText += inputText[i];
+    }
+
+    return outputText;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,0.4753163253178515,1,synthetic_reverse_string
+"
+def add(a, b):
+    result = a + b
+    return result
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",python,c,0.7906976744186046,0.25,0.6666666666666666,0.75,0.7142857142857143,1,0.5,0.6875,0.8333333333333334,1.0,0.5469577748105761,1,synthetic_addition
+"
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",javascript,c,0.7555555555555555,0.2,0.8,1.0,0.9047619047619048,1,0.3333333333333333,0.84375,1.0,1.0,0.5191747726325111,1,synthetic_addition
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+",python,java,0.6024096385542169,0.08333333333333333,0.4788732394366197,0.5555555555555556,0.5434782608695652,1,0.2,0.5070422535211268,0.7777777777777778,1.0,0.5528145253272986,1,synthetic_average
+"
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+","
+function isEven(number) {
+    return number % 2 === 0;
+}
+",java,javascript,0.17721518987341772,0.0,0.2972972972972973,0.3333333333333333,0.27586206896551724,0,0.0,0.25609756097560976,0.5454545454545454,0.0,0.039684458884233206,0,synthetic_unrelated_88
+"
+def count_positive(numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return count
+","
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+",python,java,0.5853658536585366,0.09090909090909091,0.4788732394366197,0.5454545454545454,0.5434782608695652,1,0.16666666666666666,0.5070422535211268,0.7272727272727273,0.5,0.4999536639428951,1,synthetic_count_positive
+"
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+","
+function sumTwo(x, y) {
+    let total = x + y;
+    return total;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,3,1.0,1.0,1.0,1.0,0.1629762423513784,1,synthetic_addition
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+bool isEven(int number) {
+    return number % 2 == 0;
+}
+",python,cpp,0.34782608695652173,0.0,0.3076923076923077,0.6,0.6956521739130435,0,0.0,0.7272727272727273,0.75,0.5,0.26655843493855924,0,synthetic_unrelated_22
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+",python,python,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,1.0,1,synthetic_reverse_string
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+def is_prime(number):
+    if number < 2:
+        return False
+
+    for divisor in range(2, number):
+        if number % divisor == 0:
+            return False
+
+    return True
+",javascript,python,0.5,0.0,0.43478260869565216,0.875,0.9714285714285714,0,0.0,0.8461538461538461,1.0,0.0,0.3992307966416179,0,synthetic_unrelated_93
+"
+def count_positive(numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return count
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",python,c,0.5952380952380952,0.0,0.4358974358974359,0.6666666666666666,0.4716981132075472,0,0.0,0.48,0.8888888888888888,0.2857142857142857,0.34666590512027484,1,synthetic_count_positive
+"
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+","
+bool isEven(int number) {
+    return number % 2 == 0;
+}
+",cpp,cpp,0.3939393939393939,0.0,0.3870967741935484,0.42857142857142855,0.34782608695652173,0,0.0,0.36923076923076925,0.6666666666666666,0.0,0.16512707509312297,0,synthetic_unrelated_83
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+public class Geometry {
+    public static int calculateArea(int length, int width) {
+        int area = length * width;
+        return area;
+    }
+}
+",java,java,0.6444444444444445,0.2727272727272727,0.6486486486486487,0.6666666666666666,0.6086956521739131,3,0.5,0.647887323943662,0.8888888888888888,0.25,0.3461887023812206,0,synthetic_unrelated_104
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+",java,javascript,0.5517241379310345,0.16666666666666666,0.7088607594936709,0.7777777777777778,0.717391304347826,2,0.3333333333333333,0.6338028169014085,0.7777777777777778,1.0,0.5562243850125759,1,synthetic_average
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+",python,python,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,1.0,1,synthetic_average
+"
+function sumList(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
+","
+function addAll(values) {
+    let accumulator = 0;
+
+    for (let value of values) {
+        accumulator += value;
+    }
+
+    return accumulator;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,4,1.0,1.0,1.0,1.0,0.2362747002991355,1,synthetic_sum_list
+"
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",cpp,c,0.957983193277311,1.0,1.0,1.0,1.0,10,1.0,0.9655172413793104,0.9090909090909091,1.0,0.9999999999999999,1,synthetic_maximum
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+function isPrime(number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (let divisor = 2; divisor < number; divisor++) {
+        if (number % divisor === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",python,javascript,0.35,0.0,0.32,0.45454545454545453,0.41509433962264153,0,0.0,0.4583333333333333,0.7777777777777778,0.125,0.06948452072417997,0,synthetic_unrelated_78
+"
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+","
+def calculate_area(length, width):
+    area = length * width
+    return area
+",cpp,python,0.7441860465116279,0.0,0.6111111111111112,0.75,0.7142857142857143,0,0.0,0.6875,0.8333333333333334,0.3333333333333333,0.045435168913024425,0,synthetic_unrelated_30
+"
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+int countWords(string text) {
+    int count = 0;
+
+    for (char character : text) {
+        if (character == ' ') {
+            count++;
+        }
+    }
+
+    return count + 1;
+}
+",javascript,cpp,0.4444444444444444,0.0,0.5057471264367817,0.7777777777777778,0.8913043478260869,0,0.0,0.9516129032258065,0.8888888888888888,0.1111111111111111,0.17021333318204343,0,synthetic_unrelated_79
+"
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+","
+def is_prime(number):
+    if number < 2:
+        return False
+
+    for divisor in range(2, number):
+        if number % divisor == 0:
+            return False
+
+    return True
+",c,python,0.31683168316831684,0.0,0.1702127659574468,0.7777777777777778,0.5932203389830508,0,0.0,0.6190476190476191,0.8,0.125,0.06870017160574501,0,synthetic_unrelated_45
+"
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+","
+int add(int a, int b) {
+    int result = a + b;
+    return result;
+}
+",cpp,c,1.0,1.0,1.0,1.0,1.0,3,1.0,1.0,1.0,1.0,1.0,1,synthetic_addition
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+public class Geometry {
+    public static int calculateArea(int length, int width) {
+        int area = length * width;
+        return area;
+    }
+}
+",c,java,0.37142857142857144,0.0,0.5172413793103449,1.0,0.9333333333333333,0,0.0,0.9782608695652174,1.0,0.25,0.16784152918819611,0,synthetic_unrelated_63
+"
+int searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+","
+public class TextUtil {
+    public static int countWords(String text) {
+        String[] words = text.split("" "");
+        return words.length;
+    }
+}
+",c,java,0.3333333333333333,0.0,0.3333333333333333,0.75,0.6470588235294118,0,0.0,0.7464788732394366,0.9,0.25,0.11344727458346612,0,synthetic_unrelated_94
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+function isEven(number) {
+    return number % 2 === 0;
+}
+",cpp,javascript,0.4489795918367347,0.0,0.391304347826087,0.5,0.5333333333333333,0,0.0,0.4666666666666667,0.75,0.0,0.050002854392249614,0,synthetic_unrelated_75
+"
+def find_max(numbers):
+    maximum = numbers[0]
+
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+
+    return maximum
+","
+public class Prime {
+    public static boolean isPrime(int number) {
+        if (number < 2) {
+            return false;
+        }
+
+        for (int divisor = 2; divisor < number; divisor++) {
+            if (number % divisor == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+",python,java,0.32989690721649484,0.0,0.2988505747126437,0.46153846153846156,0.45,0,0.0,0.45977011494252873,0.7272727272727273,0.125,0.22160252732952423,0,synthetic_unrelated_25
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",c,c,1.0,1.0,1.0,1.0,1.0,10,1.0,1.0,1.0,1.0,1.0,1,synthetic_average
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+function power(base, exponent) {
+    let result = 1;
+
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+",java,javascript,0.4044943820224719,0.0,0.5176470588235295,0.6363636363636364,0.8478260869565217,0,0.0,0.7323943661971831,0.6363636363636364,0.3333333333333333,0.08267383071145994,0,synthetic_unrelated_74
+"
+function findMax(numbers) {
+    let maximum = numbers[0];
+
+    for (let number of numbers) {
+        if (number > maximum) {
+            maximum = number;
+        }
+    }
+
+    return maximum;
+}
+","
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+",javascript,cpp,0.6464646464646465,0.0,0.7142857142857143,1.0,0.6610169491525424,0,0.0,0.632183908045977,0.8181818181818182,0.5,0.4024101415133581,1,synthetic_maximum
+"
+public class StringUtil {
+    public static String reverseString(String text) {
+        String result = """";
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            result += text.charAt(i);
+        }
+
+        return result;
+    }
+}
+","
+public class StringHelper {
+    public static String flipText(String inputText) {
+        String outputText = """";
+
+        for (int i = inputText.length() - 1; i >= 0; i--) {
+            outputText += inputText.charAt(i);
+        }
+
+        return outputText;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,11,1.0,1.0,1.0,1.0,0.5379698953171855,1,synthetic_reverse_string
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",cpp,cpp,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,1.0,1,synthetic_factorial
+"
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+","
+double calculateAverage(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return (double) total / size;
+}
+",cpp,cpp,1.0,1.0,1.0,1.0,1.0,10,1.0,1.0,1.0,1.0,1.0,1,synthetic_average
+"
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+function countWords(text) {
+    let words = text.split("" "");
+    return words.length;
+}
+",javascript,javascript,0.41379310344827586,0.0,0.38461538461538464,0.6666666666666666,0.7931034482758621,0,0.0,0.8571428571428571,1.0,0.0,0.06806415123460784,0,synthetic_unrelated_59
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+public class MathUtil {
+    public static int power(int base, int exponent) {
+        int result = 1;
+
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+
+        return result;
+    }
+}
+",cpp,java,0.3146067415730337,0.0,0.46153846153846156,0.6666666666666666,0.625,0,0.0,0.625,0.8888888888888888,0.0,0.1766567292539226,0,synthetic_unrelated_16
+"
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+","
+function isPrime(number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (let divisor = 2; divisor < number; divisor++) {
+        if (number % divisor === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",cpp,javascript,0.5357142857142857,0.05,0.6071428571428571,0.8181818181818182,0.8983050847457628,1,0.1,0.8275862068965517,0.8181818181818182,0.3333333333333333,0.09557030811051022,0,synthetic_unrelated_115
+"
+public class Counter {
+    public static int countPositive(int[] numbers) {
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+","
+int countWords(string text) {
+    int count = 0;
+
+    for (char character : text) {
+        if (character == ' ') {
+            count++;
+        }
+    }
+
+    return count + 1;
+}
+",java,cpp,0.5957446808510638,0.0,0.7816091954022989,0.8181818181818182,0.8913043478260869,0,0.0,0.8309859154929577,0.8181818181818182,0.4,0.42741779526589424,0,synthetic_unrelated_43
+"
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+int countWords(string text) {
+    int count = 0;
+
+    for (char character : text) {
+        if (character == ' ') {
+            count++;
+        }
+    }
+
+    return count + 1;
+}
+",c,cpp,0.5526315789473685,0.0,0.4788732394366197,0.6666666666666666,0.7317073170731707,0,0.0,0.7627118644067796,0.8888888888888888,0.0,0.16435807234650054,0,synthetic_unrelated_47
+"
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",cpp,cpp,1.0,1.0,1.0,1.0,1.0,9,1.0,1.0,1.0,1.0,1.0,1,synthetic_count_positive
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,8,1.0,1.0,1.0,1.0,1.0,1,synthetic_maximum
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+public class MathUtil {
+    public static int power(int base, int exponent) {
+        int result = 1;
+
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+
+        return result;
+    }
+}
+",java,java,0.6972477064220184,0.2857142857142857,0.7446808510638298,1.0,0.9583333333333334,4,0.5,0.9861111111111112,1.0,0.14285714285714285,0.2885210819078196,0,synthetic_unrelated_13
+"
+def sum_list(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+","
+int calculateArea(int length, int width) {
+    int area = length * width;
+    return area;
+}
+",python,cpp,0.5714285714285714,0.0,0.43902439024390244,0.8,0.9523809523809523,0,0.0,0.875,1.0,0.3333333333333333,0.03710248301231077,0,synthetic_unrelated_91
+"
+int findMax(int numbers[], int size) {
+    int maximum = numbers[0];
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > maximum) {
+            maximum = numbers[i];
+        }
+    }
+
+    return maximum;
+}
+","
+def calculate_area(length, width):
+    area = length * width
+    return area
+",cpp,python,0.4050632911392405,0.0,0.2702702702702703,0.3333333333333333,0.2542372881355932,0,0.0,0.25287356321839083,0.45454545454545453,0.14285714285714285,0.05033795379156751,0,synthetic_unrelated_109
+"
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+","
+public class Calculator {
+    public static int add(int a, int b) {
+        int result = a + b;
+        return result;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,1.0,1,synthetic_addition
+"
+public class Calculator {
+    public static int findMax(int[] numbers) {
+        int maximum = numbers[0];
+
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
+            }
+        }
+
+        return maximum;
+    }
+}
+","
+public class MathHelper {
+    public static int getLargest(int[] values) {
+        int largest = values[0];
+
+        for (int value : values) {
+            if (value > largest) {
+                largest = value;
+            }
+        }
+
+        return largest;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,8,1.0,1.0,1.0,1.0,0.3035883413612803,1,synthetic_maximum
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+int countWords(string text) {
+    int count = 0;
+
+    for (char character : text) {
+        if (character == ' ') {
+            count++;
+        }
+    }
+
+    return count + 1;
+}
+",java,cpp,0.45977011494252873,0.0,0.675,1.0,0.9512195121951219,0,0.0,0.9833333333333333,1.0,0.2,0.18752760134846866,0,synthetic_unrelated_5
+"
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+","
+int countPositive(int numbers[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+",c,c,1.0,1.0,1.0,1.0,1.0,9,1.0,1.0,1.0,1.0,1.0,1,synthetic_count_positive
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+public class TextUtil {
+    public static int countWords(String text) {
+        String[] words = text.split("" "");
+        return words.length;
+    }
+}
+",javascript,java,0.37142857142857144,0.0,0.3880597014925373,0.75,0.9705882352941176,0,0.0,0.8301886792452831,0.8,0.0,0.04262377303705942,0,synthetic_unrelated_7
+"
+function sumList(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",javascript,c,0.6216216216216216,0.09090909090909091,0.6666666666666666,1.0,0.6304347826086957,1,0.25,0.609375,0.875,0.4,0.31075443344019443,1,synthetic_sum_list
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+function sumList(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
+",java,javascript,0.5277777777777778,0.1111111111111111,0.7058823529411765,0.7777777777777778,0.7435897435897436,1,0.25,0.65,0.7777777777777778,1.0,0.4709582183046816,1,synthetic_sum_list
+"
+def search_element(numbers, target):
+    for number in numbers:
+        if number == target:
+            return True
+
+    return False
+","
+int searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+",python,c,0.5789473684210527,0.0,0.21621621621621623,0.625,0.45098039215686275,0,0.0,0.4647887323943662,0.8888888888888888,0.25,0.23752647874608437,1,synthetic_search_element
+"
+def reverse_string(text):
+    result = """"
+
+    for character in text:
+        result = character + result
+
+    return result
+","
+def flip_text(input_text):
+    output_text = """"
+
+    for ch in input_text:
+        output_text = ch + output_text
+
+    return output_text
+",python,python,1.0,1.0,1.0,1.0,1.0,5,1.0,1.0,1.0,1.0,0.15415365942701037,1,synthetic_reverse_string
+"
+def calculate_average(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total / len(numbers)
+","
+public class Prime {
+    public static boolean isPrime(int number) {
+        if (number < 2) {
+            return false;
+        }
+
+        for (int divisor = 2; divisor < number; divisor++) {
+            if (number % divisor == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+",python,java,0.3617021276595745,0.0,0.3058823529411765,0.38461538461538464,0.4166666666666667,0,0.0,0.41379310344827586,0.6363636363636364,0.125,0.16836421690241288,0,synthetic_unrelated_58
+"
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+function reverseString(text) {
+    let result = """";
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,7,1.0,1.0,1.0,1.0,1.0,1,synthetic_reverse_string
+"
+string reverseString(string text) {
+    string result = """";
+
+    for (int i = text.length() - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+bool isPrime(int number) {
+    if (number < 2) {
+        return false;
+    }
+
+    for (int divisor = 2; divisor < number; divisor++) {
+        if (number % divisor == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+",cpp,cpp,0.5046728971962616,0.0,0.47058823529411764,0.6363636363636364,0.9245283018867925,0,0.0,0.9333333333333333,1.0,0.09090909090909091,0.07864285196361376,0,synthetic_unrelated_70
+"
+function searchElement(numbers, target) {
+    for (let number of numbers) {
+        if (number === target) {
+            return true;
+        }
+    }
+
+    return false;
+}
+","
+int searchElement(int numbers[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] == target) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+",javascript,c,0.5897435897435898,0.0,0.6588235294117647,1.0,0.6666666666666666,0,0.0,0.6197183098591549,0.8888888888888888,0.0,0.23067738862805134,1,synthetic_search_element
+"
+string reverseString(string text) {
+    string result = """";
+
+    for (int i = text.length() - 1; i >= 0; i--) {
+        result += text[i];
+    }
+
+    return result;
+}
+","
+public class MathUtil {
+    public static int power(int base, int exponent) {
+        int result = 1;
+
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+
+        return result;
+    }
+}
+",cpp,java,0.5504587155963303,0.0,0.6391752577319587,0.7777777777777778,0.9795918367346939,0,0.0,0.9722222222222222,1.0,0.2222222222222222,0.4004949097092968,0,synthetic_unrelated_119
+"
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+","
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,4,1.0,1.0,1.0,1.0,1.0,1,synthetic_factorial
+"
+public class Calculator {
+    public static double calculateAverage(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return (double) total / numbers.length;
+    }
+}
+","
+public class TextUtil {
+    public static int countWords(String text) {
+        String[] words = text.split("" "");
+        return words.length;
+    }
+}
+",java,java,0.5957446808510638,0.09090909090909091,0.6075949367088608,0.6666666666666666,0.717391304347826,1,0.25,0.7464788732394366,0.9,0.3333333333333333,0.21152556666792174,0,synthetic_unrelated_44
+"
+function calculateAverage(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total / numbers.length;
+}
+","
+function getMean(values) {
+    let runningTotal = 0;
+
+    for (let value of values) {
+        runningTotal += value;
+    }
+
+    return runningTotal / values.length;
+}
+",javascript,javascript,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.22247839596949198,1,synthetic_average
+"
+public class Calculator {
+    public static int sumList(int[] numbers) {
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total;
+    }
+}
+","
+public class MathHelper {
+    public static int addAll(int[] values) {
+        int accumulator = 0;
+
+        for (int value : values) {
+            accumulator += value;
+        }
+
+        return accumulator;
+    }
+}
+",java,java,1.0,1.0,1.0,1.0,1.0,6,1.0,1.0,1.0,1.0,0.4184015400353049,1,synthetic_sum_list
+"
+function sumList(numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
+","
+int sumList(int numbers[], int size) {
+    int total = 0;
+
+    for (int i = 0; i < size; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+",javascript,cpp,0.6133333333333333,0.09090909090909091,0.6666666666666666,1.0,0.6304347826086957,1,0.25,0.6,0.7777777777777778,0.4,0.31075443344019443,1,synthetic_sum_list

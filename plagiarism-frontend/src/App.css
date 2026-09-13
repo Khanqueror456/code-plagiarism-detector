@@ -1,0 +1,630 @@
+.app {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 32px 8%;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+}
+
+.container {
+    width: 84%;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+.code-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.code-card,
+.result-card,
+.features-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.card-header h2,
+.result-card h2,
+.features-card h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+textarea {
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    resize: vertical;
+    box-sizing: border-box;
+
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6;
+
+    background: #fafafa;
+}
+
+.compare-button {
+    display: block;
+    margin: 28px auto;
+    padding: 13px 32px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #4f46e5;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.compare-button:hover {
+    background: #4338ca;
+}
+
+.compare-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error {
+    margin: 20px 0;
+    padding: 14px 18px;
+
+    background: #fee2e2;
+    color: #991b1b;
+
+    border-radius: 8px;
+}
+
+.result-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.result-card,
+.features-card {
+    padding: 24px;
+}
+
+.prediction {
+    margin-top: 24px;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.prediction.similar {
+    color: #dc2626;
+}
+
+.prediction.unrelated {
+    color: #16a34a;
+}
+
+.probability {
+    margin-top: 12px;
+    color: #64748b;
+}
+
+.probability strong {
+    color: #111827;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px;
+
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.feature span {
+    color: #64748b;
+}
+
+.feature strong {
+    color: #111827;
+}
+
+
+@media (max-width: 800px) {
+
+    .code-section,
+    .result-section {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==================================================
+   MATCHING SOURCE CODE
+   ================================================== */
+
+.matching-section {
+    margin-top: 24px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+
+.matching-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.matching-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.matching-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+.match-count {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ==================================================
+   SIDE BY SIDE CODE
+   ================================================== */
+
+.comparison-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+
+.comparison-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #111827;
+}
+
+
+.comparison-title {
+    padding: 10px 14px;
+    background: #1f2937;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #374151;
+}
+
+
+.code-display {
+    overflow-x: auto;
+    padding: 8px 0;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.code-line {
+    display: flex;
+    min-height: 23px;
+    white-space: pre;
+    color: #d1d5db;
+}
+
+
+.line-number {
+    width: 45px;
+    min-width: 45px;
+    padding-right: 12px;
+    text-align: right;
+    color: #6b7280;
+    user-select: none;
+}
+
+
+.line-content {
+    padding-right: 20px;
+}
+
+
+/* ==================================================
+   MATCHING LINE
+   ================================================== */
+
+.matching-line {
+    background: #3730a3;
+    color: #ffffff;
+}
+
+
+.matching-line .line-number {
+    color: #c7d2fe;
+    font-weight: 600;
+}
+
+
+.matching-line .line-content {
+    font-weight: 500;
+}
+
+
+/* ==================================================
+   NO MATCHES
+   ================================================== */
+
+.no-matches {
+    padding: 30px;
+    text-align: center;
+    color: #6b7280;
+    background: #f9fafb;
+    border-radius: 10px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .comparison-view {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .matching-section {
+        padding: 16px;
+    }
+
+    .matching-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+/* ==================================================
+   MAKE MATCHING SECTION USE FULL RESULT WIDTH
+   ================================================== */
+
+.matching-section {
+    grid-column: 1 / -1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   MATCHING CODE VIEW
+   ================================================== */
+
+.comparison-view {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+
+.comparison-card {
+    min-width: 0;
+    width: 100%;
+}
+
+
+/* Make the code area taller and easier to read */
+
+.code-display {
+    min-height: 180px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+
+/* Prevent the code itself from breaking */
+
+.code-line {
+    min-width: max-content;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .comparison-view {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==================================================
+   MATCHING SOURCE CODE
+   ================================================== */
+
+.matching-section {
+    grid-column: 1 / -1;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 24px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+
+.matching-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.matching-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.matching-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+.match-count {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ==================================================
+   SIDE-BY-SIDE CODE
+   ================================================== */
+
+.comparison-view {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+
+.comparison-card {
+    min-width: 0;
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #1e1e1e;
+}
+
+
+.comparison-title {
+    padding: 11px 15px;
+    background: #111827;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #374151;
+}
+
+
+/* ==================================================
+   NO MATCHES
+   ================================================== */
+
+.no-matches {
+    padding: 30px;
+    text-align: center;
+    color: #6b7280;
+    background: #f9fafb;
+    border-radius: 10px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .comparison-view {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .matching-section {
+        padding: 16px;
+    }
+
+    .matching-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+/* ==================================================
+   MODEL CONFIDENCE
+   ================================================== */
+
+.confidence-value {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+
+.confidence-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+
+.confidence-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.6s ease;
+}
+
+
+.similar-fill {
+    background: #dc2626;
+}
+
+
+.unrelated-fill {
+    background: #16a34a;
+}
+
+
+.confidence-description {
+    margin-top: 14px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.features-description {
+    margin: -10px 0 18px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* ==================================================
+   FILE UPLOAD
+   ================================================== */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.file-name {
+    display: block;
+    margin-top: 4px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+
+.upload-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 12px;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    border: 1px solid #c7d2fe;
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+
+.upload-button:hover {
+    background: #e0e7ff;
+    border-color: #a5b4fc;
+}
+
+.features-card h2 { margin-bottom: 6px; } .features-description { margin-top: 0; margin-bottom: 24px; line-height: 1.5; } .features-card { padding-top: 28px; }
