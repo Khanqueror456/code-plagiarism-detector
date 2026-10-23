@@ -1,4 +1,5 @@
-const API_URL = "http://127.0.0.1:8000";
+// const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://code-plagiarism-detector-2avl.onrender.com";
 
 export const compareCode = async (
     codeA,
